@@ -1,4 +1,4 @@
-\version "2.19.44"
+\version "2.18.2"
 
 \header {
   title = "Thee moon has been arisin"
@@ -38,7 +38,7 @@ alto = \relative c' {
 }
 
 tenor = \relative c' {
-  a2 | bes2. a4 g8 (a bes c d4) a | d2 (c4 bes) a2 \breathe a2 | f4 e d e f2~f8 e d4 | d2 (es) f \breathe
+  a2 | bes2. a4 g8 (a bes c d4) a | d2 (c4 bes) a2 \breathe a2 | f4 (e) d (e) f2~f8 (e) d4 | d2 (es) f \breathe
   
 }
 
@@ -60,7 +60,7 @@ that far -- ther off the path us get.
 \score {
   \new StaffGroup <<
     \new Staff \with {
-      midiInstrument = "choir aahs"
+      midiInstrument = "oboe"
       instrumentName = "S."
       \consists "Ambitus_engraver"
     } << \global \new Voice = "soprano" \soprano >>
@@ -68,7 +68,7 @@ that far -- ther off the path us get.
       \override VerticalAxisGroup #'staff-affinity = #CENTER
     } \lyricsto "soprano" \verse
     \new Staff \with {
-      midiInstrument = "choir aahs"
+      midiInstrument = "clarinet"
       instrumentName = "A."
       \consists "Ambitus_engraver"
     } << \global \new Voice = "alto" \alto >>
@@ -76,7 +76,7 @@ that far -- ther off the path us get.
       \override VerticalAxisGroup #'staff-affinity = #CENTER
     } \lyricsto "alto" \verse
     \new Staff \with {
-      midiInstrument = "choir aahs"
+      midiInstrument = "english horn"
       instrumentName = "T."
       \consists "Ambitus_engraver"
     }  << \global {
@@ -87,7 +87,7 @@ that far -- ther off the path us get.
       \override VerticalAxisGroup #'staff-affinity = #CENTER
     } \lyricsto "tenor" \verse
     \new Staff \with {
-      midiInstrument = "choir aahs"
+      midiInstrument = "bassoon"
       instrumentName = "B."
       \consists "Ambitus_engraver"
     }  << \global {
