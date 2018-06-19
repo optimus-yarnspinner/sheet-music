@@ -32,18 +32,18 @@ soprano = \relative c' {
 }
 
 alto = \relative c' {
-  c4 (d)  | d (es2) d2 es4 (f8 g) f4 | f2 (es4 d) f2. \breathe e4 | d4 (e) f (g2) a4. (g8) f4 | f2 (g2) f2 \breathe 
-  d4 f | e8 d c4 d2 g8 f es4 f2 | c2
+  c4 (d)  | d (es2) d2 es4 (f8 g) f4 | f2 (e4 d) f2. \breathe e4 | d4 (e) f (g2) a4. (g8) f4 | f2 (g2) f2 \breathe 
+  
   
 }
 
 tenor = \relative c' {
-  a2 | bes2. a4 g8 a bes c d4 a | d2 (c4 bes) a2 \breathe a2 | f4 e d e~e f8 g e4 c | d2 es f \breathe
+  a2 | bes2. a4 g8 (a bes c d4) a | d2 (c4 bes) a2 \breathe a2 | f4 e d e f2~f8 e d4 | d2 (es) f \breathe
   
 }
 
 bass = \relative c {
-  f2 | es f g d | bes c d2 \breathe c | d2. c4 bes2 a | g4 a bes g d'2 
+  f2 | es f g d | bes c d2 \breathe c | d2. c4 bes2 a | g bes d2 
   
 }
 
