@@ -26,8 +26,9 @@ cpThree = {\global r4 <b e> c4.. b16 | <b dis>4 <b e> <a e'> r8 b | <b e>2}
         \new Voice \relative c' { \voiceTwo \cpTwo }
       >>
       \new Staff \relative c' { \cpThree }
-      \new Staff \relative c { \clef bass \cf }
+      \new Staff \with { midiInstument = "tuba" } \relative c { \clef bass \cf }
     >>
   >>
   \layout {}
+  \midi {}
 }
