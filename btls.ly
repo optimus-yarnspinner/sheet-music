@@ -12,7 +12,7 @@ cf = { \global  e2\fff~ e8 fis g a~ | a g4 fis8~ fis e4 b8~ | b16 a g8~ g2 r4 | 
 
 cpOne = { 
   \global b4\rest <b e> <c e> dis | fis e <c e>8 e4 <dis>8 | dis4 e2\mordent r4|
-  g,8\p_"II" fis16 e c'8 a b4 r8
+  g,8\p_"II" fis16 e c'8 a dis,4 r8 b' | cis,4 dis g8. a16 fis4 | g16 fis g4 
  }
 
 cpTwo = { 
