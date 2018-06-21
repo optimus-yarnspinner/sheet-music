@@ -5,7 +5,7 @@
 
 global = { \key e \minor \tempo "Largo" 8= 66  }
 
-cf = { \global \repeat volta 2 { e2~ e8 fis g a~ | a g4 fis8~ fis e4 b8~ | b16 a g8~ g2 r4 }
+cf = { \global  \repeat volta 2 { e2\fff~ e8 fis g a~ | a g4 fis8~ fis e4 b8~ | b16 a g8~ g2 r4 }
     \repeat volta 2 { g8 a b g~ g e4. | g8 a b d~ d cis b cis~ | cis b a b~ b a g a~ | a2 r | g8 a b c~ c4 b }
     a4 g8 a~ a4 b8 g~ | g e4. r4 e8 e'~ | e4 b8 a~ a g g e~ | e2 r | 
     a4 g8 a~ a4 b8 g~ | g e4. r4 e8 g'~ | g4 e8 b~ b a a g |  }
@@ -34,8 +34,24 @@ cpThree = {
       >>
       \new Staff \relative c' { \cpThree }
       \new Staff \relative c { \clef bass \cf }
+      
     >>
   >>
   \layout {}
+}
+
+\score {
+  \unfoldRepeats 
+    <<
+    \new PianoStaff \with { midiInstrument = #"church organ" }  <<
+      \new Staff \with {midiMaximumVolume = 0.8 } <<
+        \new Voice \relative c'' { \voiceOne \cpOne }
+        \new Voice \relative c' { \voiceTwo \cpTwo }
+      >>
+      \new Staff \with {midiMaximumVolume = 0.8 } \relative c' { \cpThree }
+      \new Staff \relative c { \clef bass \cf }
+      \new Staff \relative c, { \clef bass \cf }      
+    >>
+  >>
   \midi {}
 }
