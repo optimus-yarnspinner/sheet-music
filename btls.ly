@@ -26,7 +26,7 @@ cpThree = {
 
 \score {
   <<
-    \new PianoStaff <<
+    \new PianoStaff \with { midiInstrument = #"church organ" }  <<
       \new Staff <<
         \new Voice \relative c'' { \voiceOne \cpOne }
         \new Voice \relative c' { \voiceTwo \cpTwo }
