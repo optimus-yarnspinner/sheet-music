@@ -102,7 +102,7 @@ altoMusic = \relative c' {
 tenorMusic = \relative c' {
 	 a16 bes c8 r8 a8 g4 a16 bes c8 ~ | c bes16 a bes4 ~ bes8 a16 g a4 ~ | 
 	 a8 g16 f g4 f8 a d16 c bes a | bes8 d c8. bes16 a d c bes a \clef G c f g ~ |
-	 g4 f8. g16f4 es8. f16 ~ | es4 d4. d8 c16 d e8 | f16 f8 f16~f16 g [fis d] r g8 d16~d f [e c] | 
+	 g4 f8. g16f4 es8. f16 | es4 d4. d8 c16 d e8 | f16 f8 f16~f16 g [fis d] r g8 d16~d f [e c] | 
 	 r16 c8 e8 f8 d16~ d8 c4 bes8 | r16 a c a d bes [d bes] a4 r16 e' f e | 
 	 f bes, [d bes] g'4 r16 c, f d  e e [f es] | 
 	 d g f g e c bes c~c cis d e f a, g a  | bes c d8 c8. bes16 a2
