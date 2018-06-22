@@ -11,7 +11,8 @@ cf = { \global  e2\fff~ e8 fis g a~ | a g4 fis8~ fis e4 b8~ | b16 a g8~ g2 r4 | 
     a4 g8 a~ a4 b8 g~ | g e4. r4 e8 g'~ | g4 e8 b~ b a a g |  }
 
 cpOne = { 
-  \global b4\rest <b e>8. q16 <c e>4 dis8. fis16 | fis4 e <c e>8 e4 <dis>8 | dis4 e2\mordent r4| R1 |
+  \global b4\rest <b e>8. q16 <c e>4 dis8. fis16 | fis4 e <c e>8 e4 <dis>8 | 
+  dis4 e2\mordent r8 \scaleDurations 4/6 {fis,32 gis a b c d} | R1 |
   g,8\p_"II" fis16 e c'8 a dis,4 r8 b' | cis,4 dis g8. a16 fis4 | g16 fis g4 
  }
 
