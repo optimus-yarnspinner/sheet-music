@@ -1,6 +1,7 @@
 \version "2.18.2"
 \include "articulate.ly"
-dodososo = {c\< c g' g\! a a g2 f4 f\> e e d d\! }
+
+dodososo = {c\mp_\< c g' g\! a a g2 f4 f\> e e d d\! }
 
 music = 
   <<
@@ -16,7 +17,7 @@ music =
     }
 	\new PianoStaff <<
     \new Staff = "up" \with {
-      midiInstrument = "harmonica" 
+      %midiInstrument = "harmonica" 
       midiMinimumVolume = #0.3
       midiMaximumVolume = #0.5
     }
@@ -42,7 +43,7 @@ music =
       }
     >>
     \new Staff = "down" \with {
-      midiInstrument = "harmonica" 
+     % midiInstrument = "harmonica" 
       midiMinimumVolume = #0.3
       midiMaximumVolume = #0.5
     }
@@ -63,10 +64,5 @@ music =
 \score{
   \music
   \layout{}
-}
-\score {
-  \articulate <<
-    \music
-  >>
   \midi { }
 }
