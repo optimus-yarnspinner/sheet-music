@@ -1,6 +1,6 @@
 \header {
   title = "Leck mich im Arsch!"
-  subtitle = "Canon à 6"
+  subtitle = "Canon Ã  6"
   composer = "W.A. Mozart"
 }
 
