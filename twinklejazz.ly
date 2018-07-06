@@ -16,7 +16,7 @@ music =
     }
 	\new PianoStaff <<
     \new Staff = "up" \with {
-      midiInstrument = "pad 5 (bowed)" 
+      midiInstrument = "synth voice" 
       midiMinimumVolume = #0.3
       midiMaximumVolume = #0.5
     }
@@ -42,7 +42,7 @@ music =
       }
     >>
     \new Staff = "down" \with {
-      midiInstrument = "pad 5 (bowed)" 
+      midiInstrument = "synth voice" 
       midiMinimumVolume = #0.3
       midiMaximumVolume = #0.5
     }
