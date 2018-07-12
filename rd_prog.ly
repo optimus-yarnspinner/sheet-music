@@ -2,7 +2,9 @@
   title = "Short progression"
   composer = "by someone"
 }
-
+\paper {
+  #(include-special-characters)
+}
 #(define (addBrackets grob)
   "Place brackets round a text object."
   (let* (
@@ -37,7 +39,7 @@ global = { \key cis \minor }
         cis2 r4 a'4 | fis2 dis4 e | cis2 r | dis dis4 e 
       }
     \addlyrics { \set fontSize = #-2 \set stanza = \markup {"in C"\sharp "m:    "} \repeat unfold 2 {
-      "i"4 "" \markup { "ii"\super {ø} }  \once \override LyricText.self-alignment-X = #LEFT
+      "i"4 "" \markup { "ii"\super {"&o;"} }  \once \override LyricText.self-alignment-X = #LEFT
       \markup {"(vii"\super "o" ")" } "" } }
   >>
   \layout {}
