@@ -36,7 +36,7 @@ global = { \key cis \minor }
         \global \clef bass
         cis2 r4 a'4 | fis2 dis4 e | cis2 r | dis dis4 e 
       }
-    \addlyrics { \set fontSize = #-2 \set stanza = \markup {"in C"\sharp "m:"} \repeat unfold 2 {
+    \addlyrics { \set fontSize = #-2 \set stanza = \markup {"in C"\sharp "m:    "} \repeat unfold 2 {
       "i"4 "" \markup { "ii"\super {ø} }  \once \override LyricText.self-alignment-X = #LEFT
       \markup {"(vii"\super "o" ")" } "" } }
   >>
