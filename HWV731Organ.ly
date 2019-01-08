@@ -1,27 +1,48 @@
 
 global = {\key d \major}
 
+soloMusic = {
+    r8 d fis a e'2~ | e8 a, d fis b8. a16 g16. fis32 e16. d32 |
+    cis16. b32 a8 r16 a' a16.\trill g64 a b16. cis,32 d16. a32 g'8. fis16 |
+    fis4 r16 fis g16. a32 e16. fis32 g16. a32 d,16. fis32 g16. a32 |
+    cis,8 e ~ e16. d32 cis16 \appoggiatura b a16 \appoggiatura g fis4
+    gis'8 fis32 e d cis | a4 b'8 a32 gis fis e cis8\trill e cis'4~ |
+    cis8 a32. (gis64 a32 b) cis4 ~ cis16. [fis,32] fis\trill e fis16 d'8. 
+    \appoggiatura cis16 b | gis16.\trill e32 b'8~ b16 e, 
+    d16.\trill cis32 d16. b'32 cis,16.\trill b32 cis16. a'32 b,16.\trill a32 
+    gis16 e d'8~d16. e,32 b'16. d32 cis16 a' fis e32 d cis8 b16. a32 |
+    a4 r r2 | R1 | r8 a, cis e b'2 ~| b8 e, a cis fis8. e16 d16. cis32 b16. a32 |
+    gis16. fis32 e8 gis'4~ gis8 b,~b16 b' a16. gis32 |
+    a8 cis, e4~e16 g fis16. e32 cis'8. e,16 | d8 d'16. cis32 b4 ~
+    b16. [a32 ] g fis e16 d8 cis16. b32 | b8 d16. cis32
+    cis8 e16. d32 d8. e64 (fis g32) e8. fis16 | fis8. cis'16 
+    d8  \tuplet 3/2 {cis16 b ais} b8 fis fis dis16. e32 |
+    e8. b'16 d,8. cis16 cis8. a'16 g8. fis16 | fis8 d, [fis a] c4~ c16 a' fis d |
+    b8 g [b d ] b'8. a16 g16. fis32 e16. d32 | cis8 a [cis e]
+    cis'8. b16 a16. g32 fis16. e32 | d16. cis32 d8 r d g4. fis16 e |
+    fis4. e16 d cis8 d r g, | fis8. e16 e8. d16 d8. a'16 gis16. b32 d8 |
+    r16 b' cis16. d32 << {gis,8. a16 a2} \\ {d,4 cis2} >>
+    }
+
+bassMusic = { 
+    d2 ~ d8 cis16. b32 cis8 a | fis'4. d8 g a b g | a4 d, g8 fis e a |
+    d, a' d d, cis cis' b b, | a4 cis8 a' d, b' e, cis' |
+    fis, d' gis, e' a, cis a e | fis a fis cis d d' b d, |
+    e8. fis16 gis8 a b e, a d, | e fis gis gis, a d e e, |
+    a cis' a e fis a fis cis | d d' b gis e16. gis 32 a16. d,32 e8 e, |
+    a4 a'~ a8 gis16. fis32 gis8 e | cis4. a8 d e fis d | 
+    e gis b d, cis gis' eis cis | fis4 r8 cis ais4 r8 ais' |
+    b fis g d e g fis fis, | b4 r r8 b' g g, | fis4 r8 cis'' d ais b fis|
+    g g, gis gis'  a fis b cis | d4 r r8 a fis d | g4 r r8 g e g |
+    a4 r r8 a fis a | b b, d b e e' a, cis | d d, g b a fis b, cis |
+    d g, a a' b2 | e, a, \bar "|."}
+
 \score {
-
-
     \new PianoStaff <<
-        \new Staff \relative c' { \global }
+        \new Staff \relative c' { \global \soloMusic }
         \new Staff \relative c' { \global}
         \new Staff \relative c { \global \clef bass 
-            d2 ~ d8 cis16. b32 cis8 a | fis'4. d8 g a b g | a4 d, g8 fis e a |
-            d, a' d d, cis cis' b b, | a4 cis8 a' d, b' e, cis' |
-            fis, d' gis, e' a, cis a e | fis a fis cis d d' b d, |
-            e8. fis16 gis8 a b e, a d, | e fis gis gis, a d e e, |
-            a cis' a e fis a fis cis | d d' b gis e16. gis 32 a16. d,32 e8 e, |
-            a4 a'~ a8 gis16. fis32 gis8 e | cis4. a8 d e fis d | 
-            e gis b d, cis gis' eis cis | fis4 r8 cis ais4 r8 ais' |
-            b fis g d e g fis fis, | b4 r r8 b' g g, | fis4 r8 cis'' d ais b fis|
-            g g, gis gis'  a fis b cis | d4 r r8 a fis d | g4 r r8 g e g |
-            a4 r r8 a fis a | b b, d b e e' a, cis | d d, g b a fis b, cis |
-            d g, a a' b2 | e, a, \bar "|."
-
-
-            }
+           \bassMusic }
          \new FiguredBass { \figuremode { 
          <_>2 <4 2>4 <6> | <7> <6>8 <_> <_> <6 _! > <6> <6> |
          <_>4 <6> <_>8 <6> <7> <_> | <_>2 <6>4 <5> | 
