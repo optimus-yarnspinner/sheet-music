@@ -26,7 +26,7 @@ soloMusic = {
 
 continuoMusicOne = \relative c { \global \clef bass 
     s4 d'8 fis \clef violin g4. a8 a4. <d, a'>8 g8. fis16 <d g>8 <e b'> 
-    a4 a g8 a b16. d32 cis8 | <fis, a d>8 c\rest  
+    a4 a g8 a b16. d32 cis8 | <fis, a d>8 c'\rest  
     }
 continuoMusicTwo = \relative c {
     <fis a d>4 a4 b8 e16. [d32] 
