@@ -2,11 +2,11 @@
 global = {\key d \major}
 
 soloMusic = {
-    r8 d fis a e'2~ | e8 a, d fis b8. a16 g16. fis32 e16. d32 |
-    cis16. b32 a8 r16 a' a16.\trill g64 a b16. cis,32 d16. a32 g'8. fis16 |
+    r8 d fis a e'2~ | e8 a, d fis b8. (a16) g16. fis32 e16. (d32) |
+    cis16.\prall (b32) a8 r16 a' a16.\trill (g64 a) b16. (cis,32) d16. (a32) g'8.\trill ( fis16 )|
     fis4 r16 fis g16. a32 e16. fis32 g16. a32 d,16. fis32 g16. a32 |
     cis,8 e ~ e16. d32 cis16 \appoggiatura b a16 \appoggiatura g fis4
-    gis'8 fis32 e d cis | a4 b'8 a32 gis fis e cis8\trill e cis'4~ |
+    gis'8 fis32 e d cis | \appoggiatura b16 a4 b'8 a32 gis fis e cis8\trill e cis'4~ |
     cis8 a32. (gis64 a32 b) cis4 ~ cis16. [fis,32] fis\trill e fis16 d'8. 
     \appoggiatura cis16 b | gis16.\trill e32 b'8~ b16 e, 
     d16.\trill cis32 d16. b'32 cis,16.\trill b32 cis16. a'32 b,16.\trill a32 
@@ -26,12 +26,14 @@ soloMusic = {
 
 continuoMusicOne = \relative c { \global \clef bass 
     s4 d'8 fis \clef violin g4. a8 a4. <d, a'>8 g8. fis16 <d g>8 <e b'> 
-    a4 a g8 a b16. d32 cis8 | <fis, a d>8 c'\rest  
+    a4 a g8 a b16. d32 cis8 | <fis, a d>8 c'16\rest <cis e> <a fis'>8 <fis d'> a8 a4 g8 |
+    a4. cis8~ cis d4 e8 ~ | e8 fis b,4 a r8 e' | fis4
     }
 continuoMusicTwo = \relative c {
     <fis a d>4 a4 b8 e16. [d32] 
     << { e4 ~ \stemDown e8 d16. cis32 d8} \\ {e8 cis s4.} >> s8 
-    d8 c s4 e8 cis16 d32 e d4 d8 d4 e8 
+    d8 c s4 e8 cis16 d32 e d4 d8 d4 e8 s2 e4 fis8 d | e16. d32 cis16. b32 a8 e' ~ e16 fis8. gis4 | 
+    fis8 a e32 fis gis a gis8 e4. a32. gis64 a32. b64 | a8 fis 
     }
 
 
@@ -48,28 +50,30 @@ bassMusic = {
     a4 r r8 a fis a | b b, d b e e' a, cis | d d, g b a fis b, cis |
     d g, a a' b2 | e, a, \bar "|."}
 
+numbers = \figuremode { 
+    <_>2 <4 2>4 <6> | <7> <6>8 <_> <_> <6 _! > <6> <6> |
+    <_>4 <6> <_>8 <6> <7> <_> | <_>2 <6>4 <5> | 
+    <_> <6> <_> <_+> | <6> <6>8 <_+> <_>4. <6>8 |
+    <_>2 <7>8 <6> <_>4 | <_+>2 <6/> | <_+>8  <6> <6>4 <_>2 |
+    <_>4. <6>8 <_>4. <6>8 | <_>4 <5> <_+> <4>8 <_+> |
+    <_>2 <4 2>4 <6> | <7> <6>8 <_>4. <6>4 |
+    <_+> <6> <_> <6>8 <_+> | <_>4. <_+>8<7> <6>4. |
+    <_>4. <6> <6 4>8 <5 _+> | <_>2. <6>4 | <_+>4. <6>8 <6> <6> <_> <6> |
+    <6>4 <5> <_> <6>8 <6 5> | <_>2 <_>8 <_!> <6>4 |
+    <_>2.. <6>8 | <_>2.. <6>8 | <_>2. <7>4 |
+    <_> <7> <_> <6>8 <6 5> | <_>4 <4>8 <3> <7>4 <6/> |
+    <_+>2 <_>
+    }
+
 \score {
     \new PianoStaff <<
-        \new Staff \relative c' { \global \soloMusic }
-        \new Staff <<
+        \new Staff \with { midiInstrument = "oboe" } \relative c' { \global \soloMusic }
+        \new Staff \with { midiInstrument = "flute" } <<
             \new Voice { \voiceOne \continuoMusicOne }
             \new Voice { \voiceTwo \continuoMusicTwo }
         >> 
-        \new Staff \relative c { \global \clef bass \bassMusic }
-         \new FiguredBass { \figuremode { 
-         <_>2 <4 2>4 <6> | <7> <6>8 <_> <_> <6 _! > <6> <6> |
-         <_>4 <6> <_>8 <6> <7> <_> | <_>2 <6>4 <5> | 
-         <_> <6> <_> <_+> | <6> <6>8 <_+> <_>4. <6>8 |
-         <_>2 <7>8 <6> <_>4 | <_+>2 <6/> | <_+>8  <6> <6>4 <_>2 |
-         <_>4. <6>8 <_>4. <6>8 | <_>4 <5> <_+> <4>8 <_+> |
-         <_>2 <4 2>4 <6> | <7> <6>8 <_>4. <6>4 |
-         <_+> <6> <_> <6>8 <_+> | <_>4. <_+>8<7> <6>4. |
-         <_>4. <6> <6 4>8 <5 _+> | <_>2. <6>4 | <_+>4. <6>8 <6> <6> <_> <6> |
-         <6>4 <5> <_> <6>8 <6 5> | <_>2 <_>8 <_!> <6>4 |
-         <_>2.. <6>8 | <_>2.. <6>8 | <_>2. <7>4 |
-         <_> <7> <_> <6>8 <6 5> | <_>4 <4>8 <3> <7>4 <6/> |
-         <_+>2 <_>
-         } }
+        \new Staff \with { midiInstrument = "flute" } \relative c { \global \clef bass \bassMusic }
+        \new FiguredBass { \numbers }
     >>
-    \layout{} \midi{}
+    \layout{} \midi{ \tempo 4=32}
 }
