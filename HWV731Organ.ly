@@ -24,6 +24,13 @@ soloMusic = {
     r16 b' cis16. d32 << {gis,8. a16 a2} \\ {d,4 cis2} >>
     }
 
+continuoMusicOne = \relative c { \global \clef bass 
+    <fis a d>4 d'8 fis \clef violin g4. a8 a4. }
+continuoMusicTwo = \relative c {
+    s4 a'4 b8 e16. [d32] 
+    << { e4 ~ \stemDown e8 d16. cis32 d8} \\ {e8 cis s4.} >>}
+
+
 bassMusic = { 
     d2 ~ d8 cis16. b32 cis8 a | fis'4. d8 g a b g | a4 d, g8 fis e a |
     d, a' d d, cis cis' b b, | a4 cis8 a' d, b' e, cis' |
@@ -40,9 +47,11 @@ bassMusic = {
 \score {
     \new PianoStaff <<
         \new Staff \relative c' { \global \soloMusic }
-        \new Staff \relative c' { \global}
-        \new Staff \relative c { \global \clef bass 
-           \bassMusic }
+        \new Staff <<
+            \new Voice { \voiceOne \continuoMusicOne }
+            \new Voice { \voiceTwo \continuoMusicTwo }
+        >> 
+        \new Staff \relative c { \global \clef bass \bassMusic }
          \new FiguredBass { \figuremode { 
          <_>2 <4 2>4 <6> | <7> <6>8 <_> <_> <6 _! > <6> <6> |
          <_>4 <6> <_>8 <6> <7> <_> | <_>2 <6>4 <5> | 
