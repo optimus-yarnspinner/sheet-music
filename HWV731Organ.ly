@@ -25,17 +25,19 @@ soloMusic = {
     }
 
 continuoMusicOne = \relative c { \global \clef bass 
-    s4 d'8 fis \clef violin g4. a8 a4. <d, a'>8 g8. fis16 g16. a32 b16. g32 |
+    s4 d'8 fis \clef violin g4. a8 a4. <d, a'>8 g8 fis g16. a32 b16. g32 |
     a4 a g8 a b16. d32 cis8 | <fis, a d>8 c'16\rest <cis e>\turn <a fis'>8 <fis d'> a8 a4 g8 |
     a4. cis8~ cis d4 e8 ~ | e8 fis b,4 a r8 e' | cis4 a~ a8 b4 cis16 d | 
 	<gis, b e>8 d'16. cis32 <b d>8 a b a16. gis32 a8 gis16. fis32 |
 	e8 b'16. a32 b4 a8 a4 gis8 | a8 a [cis e] cis'2 ~ cis8
-	fis,, [b d] ~ d16. e32 cis16. d32 <a cis>8 <gis b>\trill <cis, a'>4
+	fis,, [b d] ~ d16. e32 cis16. d32 <a cis>8 <gis b>\trill \once \stemDown <cis, a'>4
+	b'\rest <d, fis>4 e8 fis16. gis32 ~ gis8 a16 gis a8 <e a> a4. r8|
+	r4 b4 r4 r8 b | a4 s8 g g (fis) r <fis cis'>
     }
 continuoMusicTwo = \relative c {
     <fis a d>4 a4 b8 e16. [d32] 
     << { e4 ~ \stemDown e8 d16. cis32 d8} \\ {e8 cis s4.} >> s8 
-    d4 d8 e ~ | e8 cis16. d64 e d4 ~ d8 d4 e8 s2 e4 fis8 d | e16. d32 cis16. b32 a8 e' ~ e16 fis8. gis4 | 
+    d4 d8.. e32 ~ | e8 cis16. d64 e d4 ~ d8 d4 e8 s2 e4 fis8 d | e16. d32 cis16. b32 a8 e' ~ e16 fis8. gis4 | 
     fis8 a e32 fis gis a gis8 e4. a32. gis64 a32. b64 | a8 fis~fis fis32. e64 fis32. g?64 fis2 | 
 	s8 a e8. fis16 gis8 r4 d8 | b4 e ~ e16 [cis] d e32 fis e8 e32 d cis d |
 	cis8 r8 
@@ -43,7 +45,9 @@ continuoMusicTwo = \relative c {
 		  \once \override Stem #'length = #5 a'8 cis4 e32 d cis b s8 
 		  \voiceTwo fis4 g8\rest <e gis>16. <e b'>32 <e a>16. <fis a>32 e4 } \\
 		{ \voiceFour s4 fis a8 e <fis a>8 r8 d8. e32 fis s4 } >>
-	
+	s2 r8 b,16. a32 b4 | e4. s8 d cis d16. e32 fis16. d32 |
+	b4 d8 fis16. eis32 eis8 eis16. fis32 gis8 eis <cis fis>4 r8
+	e16 d cis4 s8
     }
 
 
