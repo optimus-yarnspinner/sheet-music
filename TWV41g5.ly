@@ -13,7 +13,7 @@ rightOne = { \global
   bes f' d f c f d4 bes a | bes8 c d es f d es4 c b | c8 g' es g d g es4 c b | r4 c8 b c d es d es f g es | 
   as2. g ~ | g4 f8 es d c b f' es d es4 ~ | es8 f d4. c8 c g c bes a g | a c f es d c d f bes4 bes | 
   bes a  r bes,8 d g4 g | g fis r g,8 bes es4 es | es d r r g,8 fis g a | bes a bes c d bes es2. | d ~ d4 c8 bes a g |
-  fis c' bes a bes4. c8 a4. g8 | g d' bes d a d bes d es d c bes | c f d f c f d f g f s d |
+  fis c' bes a bes4. c8 a4. g8 | g d' bes d a d bes d es d c bes | c f d f c f d f g f es d |
   e a f a e a f a bes a g f | g4 g2. f2 ~ | f4 es2. d2 ~| d4 c8 bes a g fis4 a8. (bes16) a4 | 
   r4 bes8. (c16) bes4 r4 c8. (d16) c4 | r4 bes8. (a16) bes4 r8 a d c bes a | bes d g f es d es4 g, c~ | 
   c bes8 a bes4. c8 a4.\trill g8| g2. bes\rest \bar "|."
@@ -23,15 +23,16 @@ rightTwo = {
   <f c'>2. << {\voiceThree f'2 g4} \\ { \voiceTwo d4 bes2} >> |<c f>2 q4 <f, bes d>4 
   << {\voiceThree d'4 s4} \\ {g,2} >> | <e a>2 <a cis>4 <a d>2. | g <g c> | f <bes, f'>4 s2 | 
   g'4 s2 f4 s2 | << { \voiceTwo bes2 } \\ { es,\arpeggio} >> es4  c2. | d2. <bes d f> |
-  < es bes'>2.  <f bes>2 <a d>4 | <bes d>4 <g c>2 <a c>2 c4 | <d, bes'>4 <g c>2 
+  < es bes' es>2.  <f bes d>2 <a d>4 | <bes d>4 <g c>2 <a c>2 c4 | <g bes d>4 <g c> <bes c> 
+  <c f>2 <f, c'>4 | <f bes>4 d2 g4. a8 f4 | s2. <f bes>4 f es | <d f>2 <d g>4 
 }
 
 leftOne = {  
   <bes, d g>2. <g' bes d> | s1. | s | s |  s2. d' | s1. | s |
-  r2. r8 a d c bes a | bes4 g bes r8 g c bes a g | as4 f as bes,2 bes'4 | 
+  s2. r8 a d c bes a | bes4 g bes r8 g c bes a g | as4 f as bes,2 bes'4 | 
   r2 bes4 r2 bes4\arpeggio | 
-  s2. r8 bes a g f es | <f bes>2. | s1. | s | s | s |
-  r2. bes8 f' d f c f | d4 s2 s2. |  
+  s2. r8 bes a g f es | <f bes>2. s | s1. | s | s | s2. bes4 a2 |
+  <f d'>2 r4 bes,8 f' d f c f | d4 s2 s2. |  
   r2. c8 g' es g d g | es4 s2 s2. | s1. | s | s |
   s2. bes'4 d8 c d bes | c c, s4 s1 | a'8 a, s4 s1 |
   s1. | s | s | s | s | s | s | s | s | 
@@ -42,7 +43,7 @@ leftOne = {
 leftTwo = { \global
   g2. r | d'4\rest g8 fis g a bes a bes c d bes | es2. d | d,4\rest bes'8 a bes g a4 d d | d cis8 b cis a bes2.|
   a d,4\rest d8 cis d e | f e f g a f bes2. | a d, | g c, | f bes,2 d4\rest | c2 r4 d2 r4 | es\arpeggio f g f4. g8 f es |
-  d c bes4 r r2. | r4 bes8 a bes c d c d es f d | g2. f2. ~ | f4  e8 f d e f e f g a f | bes4 f g es f f, | 
+  d c bes4 r d2.\rest | r4 bes8 a bes c d c d es f d | g2. f2. ~ | f4  e8 f d e f e f g a f | bes4 f g es f f, | 
   bes r a bes d c | d bes b c8 d es f g d | es4 c b c es d | es c r r2. | d4\rest c8 b c d es d es f g es |
   as2. g | f4 g g, c e c | f a f bes,2 r4 | c4 f8 es d c d4 bes r | a4 d8 c bes a bes4 g'8 fis g a |
   bes  a bes c d bes es2. | d ~ d4 c8 bes a g | fis4 f8 e f d es2. | d2 g4 c, d d, |
