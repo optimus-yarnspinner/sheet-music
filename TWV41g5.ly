@@ -18,9 +18,13 @@ rightOne = { \global
   r4 bes8. (c16) bes4 r4 c8. (d16) c4 | r4 bes8. (a16) bes4 r8 a d c bes a | bes d g f es d es4 g, c~ | 
   c bes8 a bes4. c8 a4.\trill g8| g2. bes\rest \bar "|."
 }
+rightTwo = {
+  s1. | r4 <es bes'>2 <f bes> q4 | <g bes> r2 s2. | r4 d d e a8 g a f | g4 e8 d e a ~ a4 g2 | 
+  <f c'>2. 
+}
 
-leftOne = { \global 
-  s1. | s | s | s | s | s | s | 
+leftOne = {  
+  <bes, d g>2. <g' bes d> | s1. | s | s |  s2. d' | s1. | s |
   r2. r8 a d c bes a | bes4 g bes r8 g c bes a g | as4 f as bes,2 s4 | 
   s1. | 
   r2. r8 bes' a g f es | s1. | s | s | s | s |
@@ -63,7 +67,7 @@ numbers = \figuremode {
     \new PianoStaff \with { midiInstrument = "harpsichord" } <<
         \new Staff <<
             \new Voice \relative c'' { \voiceOne \rightOne }
-            \new Voice \relative a' { \voiceTwo }
+            \new Voice \relative a' { \voiceTwo \rightTwo }
         >>
         \new Staff <<
             \new Voice \relative c' { \clef bass \voiceOne \leftOne }
