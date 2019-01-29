@@ -96,5 +96,5 @@ numbers = \figuremode {
         >>
 		\new FiguredBass { \numbers } 
     >>
-    \layout{} \midi{ \tempo 2. = 70 }
+    \layout{} \midi{ \tempo 2. = 66 }
 }
