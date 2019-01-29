@@ -33,7 +33,7 @@ rightTwo = {
   << {\voiceThree c2 s4} \\ {a4. a8 g-3 [fis] }>> d4 bes' bes | <f bes>2  bes16 c d8 ~ <g, d'>4 c2 |
   f,2 f4 <g bes>2 <g c>4 | <a c> 
   << {\voiceThree \override Beam.positions = #'(2 . 1.5) \override Stem length = 4.5 b8 a b4 } \\ {g2} >>
-  
+  <es g b>4 <c g'> c | c2 <d g>4 <es g> g fis |
   
 }
 
@@ -45,8 +45,9 @@ leftOne = {
   <f d'>2 r4 bes,8 f' d f c f | d4 s2 s2. |  
   c'2 r4 c,8 g' es g d g | es4 s2 s2. | s1. | s | c'2 b4 c2 c4 |
   c2. bes4 d8 c d bes | c c, s4 s1 | a'8 a, s4 s1 |
-  s1. | s | s | s | s | s | s | s | s | 
-  r2. r8 a' fis a d, fis | g bes g bes d, g a c a c d, fis | g bes g bes d, g fis4 s2 |
+  s1. | s | s | 
+  a'2 s2 d2 | s1. | s | s | s | s | 
+  r2. r8 a fis a d, fis | g bes g bes d, g a c a c d, fis | g bes g bes d, g fis4 s2 |
   s2. r8 g c bes a g | fis4 d s1 |
 }
 
