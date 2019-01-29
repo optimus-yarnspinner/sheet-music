@@ -16,7 +16,7 @@ rightOne = { \global
   es d r r g,8 fis g a |
   bes a bes c d bes es2. | d ~ d4 c8 bes a g |
   fis c' bes a bes4. c8 a4. g8 | g d' bes d a d bes d es d c bes | c f d f c f d f g f es d |
-  e a f a e a f a bes a g f | g4 g2. f2 ~ | f4 es2. d2 ~| d4 c8 bes a g fis4 a8. (bes16) a4 | 
+  e a f a e a f a bes a g fis | g4 g2. f2 ~ | f4 es2. d2 ~| d4 c8 bes a g fis4 a8. (bes16) a4 | 
   r4 bes8. (c16) bes4 r4 c8. (d16) c4 | r4 bes8. (a16) bes4 r8 a d c bes a | bes d g f es d es4 g, c~ | 
   c bes8 a bes4. c8 a4.\trill g8| g2. bes\rest \bar "|."
 }
@@ -25,15 +25,19 @@ rightTwo = {
   <f c'>2. << {\voiceThree f'2 g4} \\ { \voiceTwo d4 bes2} >> |<c f>2 q4 <f, bes d>4 
   << {\voiceThree d'4 s4} \\ {g,2} >> | <e a>2 <a cis>4 <a d>2. | g <g c> | f <bes, f'>4 s2 | 
   g'4 s2 f4 s2 | << { \voiceTwo bes2 } \\ { es,\arpeggio} >> es4  c2. | d2. <bes d f>2 <f' bes>4 |
-  < es bes' es>2.  <f bes d>2 <a d>4 | <bes d>4 <g c>2 <a c>2 c4 | <g bes d>4 c <bes c> 
+  < es bes' es>2.  <f bes d>2 <a d>4 | <bes d>4 <g c>2 <a c>2 c4 | <g bes d>4 c2 
   <c f>2 <f, c'>4 | <f bes>4 d2 g4. a8 f4 | s2. <f bes>4 f es | <d f>2 g4 <g c> <c, g'> <d g> |
-  g2 g4 <g c> g f | <c g'>4 es8 d es f g f g as bes g | <as c>2. <bes es>2 <bes d>4 | 
+  g2 g4 <g c> g f | <c g'>4 es8 d es f g f g as bes g | <as c>4 <c f>2 <bes es>2 <bes d>4 | 
   <as c>2 f4 d4 c8 b c4 | as'4 g f4 es4 r e | f2 a4 <f bes> d' d |
   << {\voiceThree es f s} \\ {c4. c8 bes-3 [a] }>> f4 g <bes d> | 
   << {\voiceThree c2 s4} \\ {a4. a8 g-3 [fis] }>> d4 bes' bes | <f bes>2  bes16 c d8 ~ <g, d'>4 c2 |
   f,2 f4 <g bes>2 <g c>4 | <a c> 
   << {\voiceThree \override Beam.positions = #'(2 . 1.5) \override Stem length = 4.5 b8 a b4 } \\ {g2} >>
-  <es g b>4 <c g'> c | c2 <d g>4 <es g> g fis |
+  <es g b>4 <c g'> c | c2 <d g>4 <es g> g fis | r d d <d g> g2 | 
+  <es f>4 <d f> <c f> <d f> bes' g | <g a> <f a> <g a> <f a> d' a | 
+  <bes d>2 << {es8 d} \\ {bes4} >> <as c>2 << {\override Beam.positions = #'(2.5 . 2) d8 c} \\ {bes4} >> |
+  <g bes>2 << {c8 bes} \\ {g4} >> <f a>2 << {bes8 a} \\ {f4} >> |
+  <g bes>4 g2
   
 }
 
@@ -46,8 +50,8 @@ leftOne = {
   c'2 r4 c,8 g' es g d g | es4 s2 s2. | s1. | s | c'2 b4 c2 c4 |
   c2. bes4 d8 c d bes | c c, s4 s1 | a'8 a, s4 s1 |
   s1. | s | s | 
-  a'2 s2 d2 | s1. | s | s | s | s | 
-  r2. r8 a fis a d, fis | g bes g bes d, g a c a c d, fis | g bes g bes d, g fis4 s2 |
+  a'2 s2 d2 | <d, bes'>4 bes' s1 | s1. | s | s | s | 
+  es2. r8 a, fis a d, fis | g bes g bes d, g a c a c d, fis | g bes g bes d, g fis4 s2 |
   s2. r8 g c bes a g | fis4 d s1 |
 }
 
@@ -71,7 +75,7 @@ numbers = \figuremode {
   <_\!>4 <6->8 <6-> <6-><6-> <5>2. | <7>4 <6>2 <7 _!>4 <6- 4>2 | <_->4 <_!>2 <_->4 <6>2 |
   <_>4 <6>2 <_>2. | <7 _->4 <3>2 <6\!>4 <6\!>2 | <7>4 <_+>2 <6>4 <6->8 <6-> <6-> <6-> | 
   <5>2 <6>4 <7> <6>2 | <6\!>2. <4 2>4 <_->2 | <6 5>4 <4! 2>2 <7>4 <6>2 | <7 _+>2. <_->4 <_+>2 |
-  <_>2 <6> <6-> | <6 5-> <6\!>2. <6\!>4 | <6\! 5>2 <6> <6\!>4 <_+> | <_>8 <_-> <_>2 <6 _->2. |
+  <_>2 <6> <6-> | <6\! 5-> <6\!>2. <6\!>4 | <6\! 5>2 <6\!> <6\!>4 <_+> | <_>8 <_-> <_>2 <6 _->2. |
   \bassFigureExtendersOff <6 5>4 <_->2 <6 5->2. | <7>4 <6>2 <_+>2. | <6 4> <7 _+> | <6 4>1. |
   <_>2. <_-> | <_+> <_-> | 
   
