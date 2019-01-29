@@ -21,7 +21,7 @@ rightOne = { \global
   c bes8 a bes4. c8 a4.\trill g8| g2. bes\rest \bar "|."
 }
 rightTwo = {
-  s1. | r4 <es bes'>2 <f bes> q4 | <g bes> r2 r4. fis8 g fis | g4 d, d cis8 e a g a f | g4 e8 d e a ~ a4 g2 | 
+  s1. | r4 <es bes'>2 <f bes> q4 | <g bes> r2 r4. fis8 g fis | g4 d d cis8 e a g a f | g4 e8 d e a ~ a4 g2 | 
   <f c'>2. << {\voiceThree f'2 g4} \\ { \voiceTwo d4 bes2} >> |<c f>2 q4 <f, bes d>4 
   << {\voiceThree d'4 s4} \\ {g,2} >> | <e a>2 <a cis>4 <a d>2. | g <g c> | f <bes, f'>4 s2 | 
   g'4 s2 f4 s2 | << { \voiceTwo bes2 } \\ { es,\arpeggio} >> es4  c2. | d2. <bes d f>2 <f' bes>4 |
