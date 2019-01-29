@@ -35,8 +35,8 @@ rightTwo = {
   << {\voiceThree \override Beam.positions = #'(2 . 1.5) \override Stem length = 4.5 b8 a b4 } \\ {g2} >>
   <es g b>4 <c g'> c | c2 <d g>4 <es g> g fis | r d d <d g> g2 | 
   <es f>4 <d f> <c f> <d f> bes' g | <g a> <f a> <g a> <f a> d' a | 
-  <bes d>2 << {es8 d} \\ {bes4} >> <a c>2 << {\override Beam.positions = #'(3 . 2.5) d8 c} \\ {bes4} >> |
-  <g bes>2 << {c8 bes} \\ {g4} >> <f a>2 << {\override Beam.positions = #'(2 . 1.5) bes8 a} \\ {f4} >> |
+  <bes d>2 << {es8 d} \\ {bes4} >> <a c>2 << {\override Beam.positions = #'(3 . 2.5) d8 c } \\ {a4} >> |
+  <g bes>2 << {c8 bes} \\ {g4} >> <f a>2 << {\override Beam.positions = #'(2 . 1.5) bes8 a } \\ {f4} >> |
   << {\voiceFour bes4 } \\ { g2 } >> s2 d | s4 g2 s4 a2 | s4 g2 d d4 | g2 g4 <g c>4 s2 |
   <d a'>4  g8 fis g2. fis4 | <b,? d>2.
 }
