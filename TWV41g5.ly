@@ -35,10 +35,10 @@ rightTwo = {
   << {\voiceThree \override Beam.positions = #'(2 . 1.5) \override Stem length = 4.5 b8 a b4 } \\ {g2} >>
   <es g b>4 <c g'> c | c2 <d g>4 <es g> g fis | r d d <d g> g2 | 
   <es f>4 <d f> <c f> <d f> bes' g | <g a> <f a> <g a> <f a> d' a | 
-  <bes d>2 << {es8 d} \\ {bes4} >> <as c>2 << {\override Beam.positions = #'(2.5 . 2) d8 c} \\ {bes4} >> |
-  <g bes>2 << {c8 bes} \\ {g4} >> <f a>2 << {bes8 a} \\ {f4} >> |
-  <g bes>4 g2
-  
+  <bes d>2 << {es8 d} \\ {bes4} >> <as c>2 << {\override Beam.positions = #'(3 . 2.5) d8 c} \\ {bes4} >> |
+  <g bes>2 << {c8 bes} \\ {g4} >> <f a>2 << {\override Beam.positions = #'(2 . 1.5) bes8 a} \\ {f4} >> |
+  << {\voiceFour bes4 } \\ { g2 } >> s2 d | s4 g2 s4 a2 | s4 g2 d d4 | g2 g4 <g c>4 s2 |
+  <d a'>4  g8 fis g2. fis4 | <b,? d>2.
 }
 
 leftOne = {  
@@ -52,7 +52,7 @@ leftOne = {
   s1. | s | s | 
   a'2 s2 d2 | <d, bes'>4 bes' s1 | s1. | s | s | s | 
   es2. r8 a, fis a d, fis | g bes g bes d, g a c a c d, fis | g bes g bes d, g fis4 s2 |
-  s2. r8 g c bes a g | fis4 d s1 |
+  d'4 bes g r8 g c bes a g | fis4 << { d'2 } \\ { d,4 s4} >> es'4 d c | <d, g>2.
 }
 
 leftTwo = { \global
