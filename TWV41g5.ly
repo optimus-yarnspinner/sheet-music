@@ -21,7 +21,7 @@ rightOne = { \global
   c bes8 a bes4. c8 a4.\trill g8| g2. bes\rest \bar "|."
 }
 rightTwo = {
-  s1. | r4 <es bes'>2 <f bes> q4 | <g bes> r2 r4. fis8 g a | r4 d, d cis8 e a g a f | g4 e8 d e a ~ a4 g2 | 
+  s1. | r4 <es bes'>2 <f bes> q4 | <g bes> r2 r4. fis8 g fis | g4 d, d cis8 e a g a f | g4 e8 d e a ~ a4 g2 | 
   <f c'>2. << {\voiceThree f'2 g4} \\ { \voiceTwo d4 bes2} >> |<c f>2 q4 <f, bes d>4 
   << {\voiceThree d'4 s4} \\ {g,2} >> | <e a>2 <a cis>4 <a d>2. | g <g c> | f <bes, f'>4 s2 | 
   g'4 s2 f4 s2 | << { \voiceTwo bes2 } \\ { es,\arpeggio} >> es4  c2. | d2. <bes d f>2 <f' bes>4 |
@@ -35,7 +35,7 @@ rightTwo = {
   << {\voiceThree \override Beam.positions = #'(2 . 1.5) \override Stem length = 4.5 b8 a b4 } \\ {g2} >>
   <es g b>4 <c g'> c | c2 <d g>4 <es g> g fis | r d d <d g> g2 | 
   <es f>4 <d f> <c f> <d f> bes' g | <g a> <f a> <g a> <f a> d' a | 
-  <bes d>2 << {es8 d} \\ {bes4} >> <as c>2 << {\override Beam.positions = #'(3 . 2.5) d8 c} \\ {bes4} >> |
+  <bes d>2 << {es8 d} \\ {bes4} >> <a c>2 << {\override Beam.positions = #'(3 . 2.5) d8 c} \\ {bes4} >> |
   <g bes>2 << {c8 bes} \\ {g4} >> <f a>2 << {\override Beam.positions = #'(2 . 1.5) bes8 a} \\ {f4} >> |
   << {\voiceFour bes4 } \\ { g2 } >> s2 d | s4 g2 s4 a2 | s4 g2 d d4 | g2 g4 <g c>4 s2 |
   <d a'>4  g8 fis g2. fis4 | <b,? d>2.
