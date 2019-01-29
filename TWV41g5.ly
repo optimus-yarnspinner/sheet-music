@@ -12,7 +12,9 @@ rightOne = { \global
   f4 es8 f d es f es f g a f | bes a g a f g a bes a g f es | d c d a bes4. es8 c4. bes8 |
   bes f' d f c f d4 bes a | bes8 c d es f d es4 c b | c8 g' es g d g es4 c b | r4 c8 b c d es d es f g es | 
   as2. g ~ | g4 f8 es d c b f' es d es4 ~ | es8 f d4. c8 c g c bes a g | a c f es d c d f bes4 bes | 
-  bes a  r bes,8 d g4 g | g fis r g,8 bes es4 es | es d r r g,8 fis g a | bes a bes c d bes es2. | d ~ d4 c8 bes a g |
+  bes a  r bes,8 d g4 g | g fis r g,8 bes es4 es |
+  es d r r g,8 fis g a |
+  bes a bes c d bes es2. | d ~ d4 c8 bes a g |
   fis c' bes a bes4. c8 a4. g8 | g d' bes d a d bes d es d c bes | c f d f c f d f g f es d |
   e a f a e a f a bes a g f | g4 g2. f2 ~ | f4 es2. d2 ~| d4 c8 bes a g fis4 a8. (bes16) a4 | 
   r4 bes8. (c16) bes4 r4 c8. (d16) c4 | r4 bes8. (a16) bes4 r8 a d c bes a | bes d g f es d es4 g, c~ | 
@@ -23,12 +25,14 @@ rightTwo = {
   <f c'>2. << {\voiceThree f'2 g4} \\ { \voiceTwo d4 bes2} >> |<c f>2 q4 <f, bes d>4 
   << {\voiceThree d'4 s4} \\ {g,2} >> | <e a>2 <a cis>4 <a d>2. | g <g c> | f <bes, f'>4 s2 | 
   g'4 s2 f4 s2 | << { \voiceTwo bes2 } \\ { es,\arpeggio} >> es4  c2. | d2. <bes d f>2 <f' bes>4 |
-  < es bes' es>2.  <f bes d>2 <a d>4 | <bes d>4 <g c>2 <a c>2 c4 | <g bes d>4 <g c> <bes c> 
+  < es bes' es>2.  <f bes d>2 <a d>4 | <bes d>4 <g c>2 <a c>2 c4 | <g bes d>4 c <bes c> 
   <c f>2 <f, c'>4 | <f bes>4 d2 g4. a8 f4 | s2. <f bes>4 f es | <d f>2 g4 <g c> <c, g'> <d g> |
-  g2 g4 <g c> g f | <c g'>4 es8 d es f g f g as bes g | <as c'>2. <bes es>2 <bes d>4 | 
-  <as c>2 f4 d4 c8 b c4 | g'4 f2 es4 r e | f2 a4 <f bes> d' d |
-  << {\voiceThree es f s} \\ {c4. c8 bes^3 [a] }>> f4 g <bes d> | 
-  << {\voiceThree c2 s} \\ {a4. a8 g^3 [fis] }>> d4 bes' bes | 
+  g2 g4 <g c> g f | <c g'>4 es8 d es f g f g as bes g | <as c>2. <bes es>2 <bes d>4 | 
+  <as c>2 f4 d4 c8 b c4 | as'4 g f4 es4 r e | f2 a4 <f bes> d' d |
+  << {\voiceThree es f s} \\ {c4. c8 bes-3 [a] }>> f4 g <bes d> | 
+  << {\voiceThree c2 s4} \\ {a4. a8 g-3 [fis] }>> d4 bes' bes | <f bes>2  bes16 c d8 ~ <g, d'>4 c2 |
+  f,2 f4 <g bes>2 <g c>4 | <a c> 
+  << {\voiceThree \override Beam.positions = #'(2 . 1.5) \override Stem length = 4.5 b8 a b4 } \\ {g2} >>
   
   
 }
