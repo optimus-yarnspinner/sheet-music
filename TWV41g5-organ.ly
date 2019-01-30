@@ -26,7 +26,7 @@ leftOne = {
   s1. | s2. r8 bes' a g f es | s1. | s1. | s | s | s | 
   s2. bes8 f' d f c f | d4 s2 s2. |  
   s2. c8 g' es g d g | es4 s2 s2. | s1. | s | s |
-  s2. bes4 d8 c d bes | c' c, s4 s1 | a'8 a, s4 s1 |
+  s2. bes'4 d8 c d bes | c c, s4 s1 | a'8 a, s4 s1 |
   s1. | s | s |  s | s | s1. | s | s | s | 
   s2. r8 a' fis a d, fis | g bes g bes d, g a c a c d, fis | g bes g bes d, g fis4 s2 |
   s2. r8 g c bes a g | fis4 d r s2. | s1. 
@@ -64,7 +64,14 @@ pedals = { \global
 	<< { es2. } \\ {bes4 a bes} >> <a c>2 r4 | <bes d>2 r4 r2. | r4 <d g>2 <d bes'> a'4 |
 	<< { bes2. } \\ {d,4 es2} >> <f a>2. | << { g2. } \\ {d4 c2} >> <c f>2 q4 | 
 	<d f>2 << { g2 } \\ {d4 es} >> f2 | <d f>4 r f f2. ~| f2 <d g>4 <c g'>2 <d g>4 | 
-	<c g'>2 <d g>4 <c g'>2 <d f>4 | <c g'>2 r4 r2. | 
+	<c g'>2 <d g>4 <c g'>2 <d f>4 | <c g'>2 r4 r2. | r4 <es as>2 <es bes'>2. | 
+	<es c'>4 <f c'>2 << { r4 g8 f g4 as4 g2 } \\ {d2 c4 ~ c b2} >> <c g'>2 e4 |
+	<c f>2. f4 bes8 a bes4 | <es, g>4 <c f> r f d bes | <c e>4 <a d> r d4 bes'8 a bes4 | 
+	<f bes>2 r4 <g d'>4 c4 r | f,2 bes4~ bes g c ~ | <a c> <g b>2~q4 g2 | d4 fis g~ <es g> <d fis>2 |
+	<bes g'>4 r <d a'>	<d g> r q | <es f> <d f> <es f> <d f>2 <d g>4 | 
+	<e g> <f a> <e a> <f a>2 <d a'>4 | <g bes>2 <es bes'>4 <es a>2 <d a'>4 | 
+	<d g>2 <c g'>4 <c f>2 <bes f'>4 | <bes g>4 c es d2. | g fis | g d4 r d |
+	d r g es2 es4 | d fis << {g2. fis4 } \\ {s4 es d2} >> | <b? d>2. r
 	
 } 
 
@@ -80,7 +87,7 @@ pedals = { \global
 			>>
 			\new FiguredBass { \numbers } 
 		>>
-		\new Staff \new Voice \relative c { % \clef "F^8" 
+		\new Staff \new Voice \relative c {  \clef "F^8" 
 			\pedals }       
 	>>
     \layout{} \midi{ \tempo 2. = 66 }
