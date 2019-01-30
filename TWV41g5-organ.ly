@@ -21,17 +21,15 @@ rightOne = { \global
   c bes8 a bes4. c8 a4.\trill g8| g2. bes\rest \bar "|."
 }
 leftOne = {  
-  <bes, d g>2. <g' bes d> | s1. | s | s |  s2. d' | s1. | s |
-  s2. r8 a d c bes a | bes4 g bes r8 g c bes a g | as4 f as bes,2 bes'4 | 
-  r2 bes4 r2 bes4\arpeggio | 
-  s2. r8 bes a g f es | <f bes>2. s | s1. | s | s | s2. bes4 a2 |
-  <f d'>2 r4 bes,8 f' d f c f | d4 s2 s2. |  
-  c'2 r4 c,8 g' es g d g | es4 s2 s2. | s1. | s | c'2 b4 c2 c4 |
-  c2. bes4 d8 c d bes | c c, s4 s1 | a'8 a, s4 s1 |
-  s1. | s | s | 
-  a'2 s2 d2 | <d, bes'>4 bes' s1 | s1. | s | s | s | 
-  es2. r8 a, fis a d, fis | g bes g bes d, g a c a c d, fis | g bes g bes d, g fis4 s2 |
-  d'4 bes g r8 g c bes a g | fis4 << { d'2 } \\ { d,4 s4} >> es'4 d c | <d, g>2.
+  s1. | s | s | s | s | s | s |
+  s2. r8 a d c bes a | bes4 g bes r8 g c bes a g | as4 f as bes,2 s4 | 
+  s1. | s2. r8 bes' a g f es | s1. | s1. | s | s | s | 
+  s2. bes8 f' d f c f | d4 s2 s2. |  
+  s2. c8 g' es g d g | es4 s2 s2. | s1. | s | s |
+  s2. bes4 d8 c d bes | c' c, s4 s1 | a'8 a, s4 s1 |
+  s1. | s | s |  s | s | s1. | s | s | s | 
+  s2. r8 a' fis a d, fis | g bes g bes d, g a c a c d, fis | g bes g bes d, g fis4 s2 |
+  s2. r8 g c bes a g | fis4 d r s2. | s1. 
 }
 leftTwo = { \global
   g2. r | d'4\rest g8 fis g a bes a bes c d bes | es2. d | d,4\rest bes'8 a bes g a4 d d | d cis8 b cis a bes2.|
@@ -63,8 +61,12 @@ pedals = { \global
 	<d bes'>2. r | r4 <es' bes'>2 <f bes> f4 |  <g bes>2. r4 a fis | g d'8 c d4 cis a8 g a4 |
 	g4 e a~a g2 | <f c'>2. r4 <f bes> g | <f c'>2 q4 <f d'>4 <g d'>2 | 
 	<e a>2. <d a'>2 c4 | <bes g'>2. <c g'>2 bes4 | <as f'>2. <bes f'>2 r4 | <es g>2 r4 <bes f'>2 r4 |
-	<< { es2. } \\ {bes4 a bes} >> <a c>2
-}
+	<< { es2. } \\ {bes4 a bes} >> <a c>2 r4 | <bes d>2 r4 r2. | r4 <d g>2 <d bes'> a'4 |
+	<< { bes2. } \\ {d,4 es2} >> <f a>2. | << { g2. } \\ {d4 c2} >> <c f>2 q4 | 
+	<d f>2 << { g2 } \\ {d4 es} >> f2 | <d f>4 r f f2. ~| f2 <d g>4 <c g'>2 <d g>4 | 
+	<c g'>2 <d g>4 <c g'>2 <d f>4 | <c g'>2 r4 r2. | 
+	
+} 
 
 \score { 
 		<<
