@@ -1,6 +1,6 @@
 \header {
-  title = "昭君出塞"
-  instrument = "琵琶"
+  title = ""
+  instrument = ""
 }
 \paper {
 
