@@ -3,13 +3,10 @@
   instrument = ""
 }
 \paper {
-
-system-system-spacing #'basic-distance = #20
-
-
+  system-system-spacing #'basic-distance = #20
 }
-\score {
-<<
+
+yuePu = <<
   \new ChordNames \chordmode {
     d1:m g, bes, a,:m d:m g, bes,2 a,:m d1:m d:m d2:m c g, d:m g,1 bes,2 c 
     d2:m c g, d:m g,1 bes,2 c d1:m bes, g, bes,2 a,:m d1:m bes,2 a,:m d1:m}
@@ -25,10 +22,13 @@ system-system-spacing #'basic-distance = #20
   }
 
 >>
-  \layout {  
-    \context {
-      \Staff
-              }
-  }
-  \midi {}
+
+\score {
+  \yuePu
+  \layout { }
+}
+
+\score {
+  \unfoldRepeats \yuePu
+  \midi { }
 }
