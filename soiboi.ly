@@ -21,10 +21,10 @@ glbl = {\key f \major}
               c4 c cis8. d16~ d8 r r8. bes16~bes8. bes16 b8. cis16 ~ cis8 r8 r4 f8. f16 g8. a16 r4 a4 \tuplet 3/2 {g4 g8 ~} g2
               a4 a \tuplet 3/2 {r4 bes c} c bes a8. g16 ~ g4 f f g a g4. f8 f2 \bar "||"}
             \new Voice = "basses" \relative c { \voiceTwo \clef bass 
-              f4 f g8. a16~ a8 r16 ces, bes8 r16 aes'16~aes8. g16 f8. e16 es8. d16 g,8 r f'8. f16 g8. a16 r4 a4 \tuplet 3/2 {g4 g8 ~} g2
+              f,8. f'16 fis4 g a8. ces,16 bes8 r16 aes'16~aes8. g16 f8. e16 es8. d16 g,8 r f'8. f16 g8. a16 r4 a4 \tuplet 3/2 {g4 g8 ~} g2
               a4 a \tuplet 3/2 {r4 bes c} c bes a8. g16 ~ g4 f f g a g4. f8 f2 \bar "||"}
         >>
         \new Lyrics \lyricsto "basses" { }
     >>
-    \layout{} \midi{}
+    \layout{} \midi{ \tempo 4= 110 }
 }
