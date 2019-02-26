@@ -20,7 +20,7 @@ system-system-spacing #'basic-distance = #20
     \alternative {{ \grace f (d1) } {\grace f8 (d2) r8 d f a} }
     a2 g4. f8 | g f g a f8. d16 c'8 f, | g4. a8 g4. f8 | g a d c a8. d16 f8 a |
     a2 g4. f8 | g f g a f8. d16 c'8 f, | g4. a8 g4. f8 | g a d c a8. d,16 f8 a |
-    a2 r8 d, f a | d,2 r8 d c' f, | | g4. a8 g4. f8 | d4. c8 a a g' f | 
+    a2 r8 d, f a | <d, \parenthesize d'>2 r8 d c' f, | | g4. a8 g4. f8 | d4. c8 a a g' f | 
     d2 r8 d c' f, | g4. f8 a, a g' f | d1\fermata \bar "|."
   }
 
