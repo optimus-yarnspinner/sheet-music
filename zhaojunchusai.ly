@@ -14,7 +14,7 @@ system-system-spacing #'basic-distance = #20
     d1:m g, bes, a,:m d:m g, bes,2 a,:m d1:m d:m d2:m c g, d:m g,1 bes,2 c 
     d2:m c g, d:m g,1 bes,2 c d1:m bes, g, bes,2 a,:m d1:m bes,2 a,:m d1:m}
   \new Staff \with { midiInstrument = "acoustic guitar (nylon)" }
-  \new Voice \relative c' { \key d \minor 
+  \new Voice \relative c' { \key d \dorian 
     \repeat volta 2 {r8 d d a'  a d,4 a'8 | g4. f8 d2 | r8 f f d f f g a | 
     \grace c,8 (a2.) a8 d| c d f2 d8 a' | g f g2. | f8 d4 d8 c a \tuplet 3/2 {g'8 f g} | }
     \alternative {{ \grace f (d1) } {\grace f8 (d2) r8 d f a} }
