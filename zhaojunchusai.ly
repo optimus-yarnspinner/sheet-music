@@ -12,10 +12,10 @@ heXuanLayout =
     d1:m d:m d2:m c g, d:m g,1 bes,2 c 
     d2:m c g, d:m g,1 bes,2 c d1:m bes, g, bes,2 a,:m d1:m bes,2 a,:m d1:m}
 heXuanMidi = 
-  \new ChordNames \chordmode {
-    \repeat volta 2 {d1:m g, bes, a,:m d:m g, bes,2 a,:m }
-    \alternative {{d1:m} {d:m}} d2:m c g, d:m g,1 bes,2 c 
-    d2:m c g, d:m g,1 bes,2 c d1:m bes, g, bes,2 a,:m d1:m bes,2 a,:m d1:m}
+  \new ChordNames \with { midiInstrument = "string ensemble 1" } \chordmode {
+    \repeat volta 2 {d,1:m g, bes, a,:m d:m g, bes,2 a,:m }
+    \alternative {{d,1:m} {d,:m}} d,2:m c, g, d:m g,1 bes,2 c 
+    d,2:m c g, d:m g,1 bes,2 c d1:m bes, g bes,2 a,:m d1:m bes,2 a,:m d1:m}
 
 yuePu =   
   \new Staff \with { midiInstrument = "acoustic guitar (nylon)" }
