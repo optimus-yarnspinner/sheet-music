@@ -6,10 +6,18 @@
   system-system-spacing #'basic-distance = #20
 }
 
-yuePu = <<
+heXuanLayout = 
   \new ChordNames \chordmode {
-    d1:m g, bes, a,:m d:m g, bes,2 a,:m d1:m d:m d2:m c g, d:m g,1 bes,2 c 
+    d1:m g, bes, a,:m d:m g, bes,2 a,:m 
+    d1:m d:m d2:m c g, d:m g,1 bes,2 c 
     d2:m c g, d:m g,1 bes,2 c d1:m bes, g, bes,2 a,:m d1:m bes,2 a,:m d1:m}
+heXuanMidi = 
+  \new ChordNames \chordmode {
+    \repeat volta 2 {d1:m g, bes, a,:m d:m g, bes,2 a,:m }
+    \alternative {{d1:m} {d:m}} d2:m c g, d:m g,1 bes,2 c 
+    d2:m c g, d:m g,1 bes,2 c d1:m bes, g, bes,2 a,:m d1:m bes,2 a,:m d1:m}
+
+yuePu =   
   \new Staff \with { midiInstrument = "acoustic guitar (nylon)" }
   \new Voice \relative c' { \key d \dorian 
     \repeat volta 2 {r8 d d a'  a d,4 a'8 | g4. f8 d2 | r8 f f d f f g a | 
@@ -21,14 +29,12 @@ yuePu = <<
     d2 r8 d c' f, | g4. f8 a, a g' f | d1\fermata \bar "|."
   }
 
->>
-
 \score {
-  \yuePu
+  << \heXuanLayout \yuePu>>
   \layout { }
 }
 
 \score {
-  \unfoldRepeats \yuePu
+  \unfoldRepeats << \heXuanMidi \yuePu>>
   \midi { }
 }
