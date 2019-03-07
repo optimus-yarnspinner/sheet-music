@@ -63,11 +63,13 @@ bassMelody = { \repeat volta 2 {e4 (d) c b a e' f f e r8 bes a4 bes8 ([a]) d4 a 
 \score {
   \unfoldRepeats
   <<
-    \new Staff \relative c' << 
       \key a \phrygian 
-      \new Voice\cantusMelody
-	  \new Voice\altoMelody
-      >>
+      \new Voice  \relative c'\cantusMelody
+	    \new Voice  \relative c'\altoMelody
+      \new Voice \relative f \tenorMelody
+    
+      \new Voice \relative f \bassMelody
+    
    >>
   \midi { \tempo 2 = 55 }
 }
