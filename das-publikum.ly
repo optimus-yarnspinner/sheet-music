@@ -20,9 +20,9 @@ sopMusic = \relative c' {
 sopWords = \lyricmode {
   Das Pub -- li -- kum war heu -- te wie -- der wun -- der -- voll, 
   und trau -- rig kling der Schluss -- ak -- kord in Moll. 
-  Wir sa -- gen Dan -- ke -- schön und Auf Wie -- der -- sehn, 
+  Wir sa -- gen Dan -- ke -- schÃ¶n und Auf Wie -- der -- sehn, 
   schaun Sie mal wie -- der rein, denn  et -- was Schau muss sein- 
-  und heißt es Büh -- ne frei, dann sind Sie mit da 
+  und heisst es Büh -- ne frei, dann sind Sie mit da -- bei
 }
 
 mezMusic = \relative c'' {
